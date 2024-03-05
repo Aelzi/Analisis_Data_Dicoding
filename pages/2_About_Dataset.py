@@ -8,12 +8,11 @@ Sistem berbagi sepeda adalah cara baru penyewaan sepeda tradisional, dimana selu
 """)
 
 st.subheader("Dataset")
-st.write("""
-Dataset utama berisi catatan historis dua tahun (2011 dan 2012) dari sistem Capital Bikeshare di Washington D.C., Amerika Serikat.... (isi sisanya dari penjelasan dataset) 
-""")
+st.write("""  """)
 
 # Petunjuk penggunaan dataset secara umum (Anda bisa sesuaikan)
 st.subheader("Penggunaan")
 st.write("**Contoh Tugas yang Dapat Dilakukan:**")
 st.write("* **Regresi**: Prediksi jumlah penyewaan berdasarkan kondisi lingkungan dan musim.")
 st.write("* **Deteksi Peristiwa dan Anomali**")
+st
