@@ -19,7 +19,7 @@ def main():
 
     st.sidebar.header("Filter")
     option = st.sidebar.selectbox("Pilih Analisis:",
-                                ("Kondisi Cuaca", "Puncak Peminjaman", "Pola Peminjaman"))
+                                  ("Kondisi Cuaca", "Puncak Peminjaman", "Pola Peminjaman"))
 
     if option == "Kondisi Cuaca":
         st.subheader("Pengaruh Kondisi Cuaca terhadap Jumlah Peminjaman Sepeda Harian")
@@ -37,3 +37,5 @@ def main():
     if st.checkbox('Tampilkan data sepeda harian'):
         st.write(day_data)
 
+if __name__ == "__main__":
+    main()
