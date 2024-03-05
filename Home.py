@@ -1,6 +1,4 @@
-import streamlit as st
-from streamlit_extras.switch_page_button import switch_page
- 
+import streamlit as st 
 # Deskripsi Dataset
 st.title("Bike Sharing Dataset")
 
