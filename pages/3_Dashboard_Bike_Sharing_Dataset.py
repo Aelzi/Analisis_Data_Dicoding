@@ -209,3 +209,37 @@ text = """
 st.markdown(text)
 
 
+st.write("## PPola Peminjaman Berdasarkan Hari (Daily Patterns)")
+# Pola Peminjaman Berdasarkan Hari
+plt.figure(figsize=(18, 6))
+plt.subplot(1, 3, 2)
+daily_avg.plot(kind='bar', color='green')
+plt.title('Rata-Rata Jumlah Peminjaman per Hari')
+plt.xlabel('Hari (0=Sunday, 6=Saturday)')
+plt.ylabel('Rata-Rata Jumlah Peminjaman')
+plt.xticks(rotation=0)
+plt.tight_layout()
+st.pyplot(plt)
+# Menampilkan teks interpretasi
+text = """
+- Varian Mingguan: Ada fluktuasi dalam jumlah peminjaman dari hari ke hari, dengan hari kerja menunjukkan jumlah peminjaman yang lebih tinggi dibandingkan akhir pekan. Pola ini menunjukkan bahwa sepeda banyak digunakan untuk komute selama hari kerja. Pada akhir pekan, penurunan peminjaman mungkin menunjukkan penggunaan yang lebih santai atau rekreasi, yang kurang rutin atau bisa dipengaruhi oleh faktor cuaca atau kegiatan sosial.
+"""
+st.markdown(text)
+
+
+st.write("## Pola Peminjaman Berdasarkan Bulan (Monthly Patterns)")
+# Pola Peminjaman Berdasarkan Bulan
+plt.figure(figsize=(18, 6))
+plt.subplot(1, 3, 3)
+monthly_avg.plot(kind='bar', color='orange')
+plt.title('Rata-Rata Jumlah Peminjaman per Bulan')
+plt.xlabel('Bulan')
+plt.ylabel('Rata-Rata Jumlah Peminjaman')
+plt.xticks(rotation=0)
+plt.tight_layout()
+st.pyplot(plt)
+text = """
+- Tren Bulanan: Jumlah peminjaman cenderung meningkat dari bulan Januari hingga Juni, mencapai puncaknya di bulan-bulan musim panas, kemudian menurun kembali ke arah musim dingin. Kenaikan jumlah peminjaman selama bulan-bulan hangat mungkin disebabkan oleh kondisi cuaca yang lebih menyenangkan, yang mendukung aktivitas luar ruang seperti bersepeda. Penurunan di bulan-bulan dingin mungkin karena kondisi cuaca yang kurang mendukung, seperti hujan atau salju, yang membuat bersepeda menjadi kurang menarik atau bahkan tidak mungkin dilakukan.
+"""
+st.markdown(text)
+
