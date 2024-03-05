@@ -6,8 +6,8 @@ import seaborn as sns
 # Fungsi untuk memuat data
 @st.cache
 def load_data():
-    hour_data = pd.read_csv('path/to/hour.csv')
-    day_data = pd.read_csv('path/to/day.csv')
+    hour_data = pd.read_csv('df_hour.csv')
+    day_data = pd.read_csv('df_day.csv')
     hour_data['dteday'] = pd.to_datetime(hour_data['dteday'])
     day_data['dteday'] = pd.to_datetime(day_data['dteday'])
     return hour_data, day_data
