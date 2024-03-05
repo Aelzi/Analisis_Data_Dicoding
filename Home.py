@@ -1,21 +1,39 @@
-import streamlit as st 
-# Deskripsi Dataset
-st.title("Bike Sharing Dataset")
+import streamlit as st
 
-st.subheader("Latar Belakang")
-st.write("""
-Sistem berbagi sepeda adalah cara baru penyewaan sepeda tradisional, dimana seluruh proses mulai dari pendaftaran keanggotaan, penyewaan, dan pengembalian dilakukan secara otomatis..... (isi sisanya dari penjelasan dataset)
+# Menambahkan judul
+st.title("Proyek Analisi Data Dicoding")
+
+# Menampilkan informasi pribadi
+st.markdown("""
+**Nama:** Alfarelzi\n
+**Email:** alfarezi31as@gmail.com\n
+**Username:** Farelzii
 """)
 
-st.subheader("Dataset")
-st.write("""
-Dataset utama berisi catatan historis dua tahun (2011 dan 2012) dari sistem Capital Bikeshare di Washington D.C., Amerika Serikat.... (isi sisanya dari penjelasan dataset) 
+# Menambahkan judul dataset
+st.header("Dataset: Analisis Bike Sharing Dataset")
+
+# Menambahkan teks deskriptif tentang dataset
+st.markdown("""
+Dataset ini berisi data tentang penggunaan sepeda bersama di berbagai kota di seluruh dunia. 
+Data ini dapat digunakan untuk menganalisis berbagai aspek penggunaan sepeda bersama, 
+seperti pola penggunaan, pengaruh cuaca, dan faktor-faktor lain yang memengaruhi permintaan.
+
+**Beberapa contoh analisis yang dapat dilakukan dengan dataset ini:**
+
+* Menganalisis pola penggunaan sepeda berdasarkan waktu, hari, dan bulan.
+* Mempelajari pengaruh cuaca dan musim terhadap penggunaan sepeda.
+* Mengidentifikasi lokasi yang memiliki permintaan tinggi untuk layanan berbagi sepeda.
+* Mengembangkan model untuk memprediksi permintaan sepeda di masa depan.
+
+**Dataset ini dapat bermanfaat bagi berbagai pihak, seperti:**
+
+* Operator sistem berbagi sepeda
+* Pemerintah kota
+* Peneliti
+* Masyarakat umum
+
+**Anda dapat mengunduh dataset ini di sini:**
+
+[Link ke dataset]
 """)
-
-# Petunjuk penggunaan dataset secara umum (Anda bisa sesuaikan)
-st.subheader("Penggunaan")
-st.write("**Contoh Tugas yang Dapat Dilakukan:**")
-st.write("* **Regresi**: Prediksi jumlah penyewaan berdasarkan kondisi lingkungan dan musim.")
-st.write("* **Deteksi Peristiwa dan Anomali**")
-
-# Tambahkan bagian lain seperti informasi file, karakteristik, lisensi, dan kontak
